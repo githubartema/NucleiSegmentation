@@ -6,8 +6,6 @@ from keras.models import Model
 from keras.layers import Input
 from keras.layers.core import Dropout, Lambda
 
-#the activation function changed to elu in comparison to the original paper
-
 def UNet(img_size):
 
     inputs = Input((img_size, img_size, 3))
